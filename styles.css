@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #1a1110;
+}
+video{
+    visibility:hidden;
+    overflow: hidden;
+}
+@media (min-aspect-ratio: 16/9) {
+    #back {
+        width:100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    #back { 
+        width:auto;
+        height: 100%;
+    }
+}
+p{
+    visibility: hidden;
+    z-index: 0;
+}
+.btn{
+position: absolute;
+top: 15rem;
+left: 15rem;
+border: 3px solid #3b3c36;
+font-size: 5rem;
+background-color: #485461;
+}
+.btn:hover{
+    background: red;
+}
+.btn:active{
+    background: green;
+}
